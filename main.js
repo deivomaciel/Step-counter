@@ -6,9 +6,9 @@ const updateDisplay = value => {
 window.onload = () => {
     if(window.DeviceMotionEvent) {
         window.addEventListener('devicemotion', event => {
-           console.log(event.currentTarget.location.host)
-           const host = event.currentTarget.location.host
-           updateDisplay(host)
+            const acceleration = event.acceleration.x
+            console.log(acceleration)
+            updateDisplay('Aceleração no eixo X: ' + acceleration)
         })
 
     } else console.log('Seu navegador não suporta a API de orientação do dispositivo.')    

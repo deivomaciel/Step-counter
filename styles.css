@@ -7,5 +7,14 @@
 
 .container {
     height: 100vh;
-    background: red;
+    padding: 24px;
+    display: flex;
+}
+
+.display {
+    width: 100vw;
+    padding: 24px;
+    border-radius: 24px;
+    background: #272727;
+    color: #fff
 }
