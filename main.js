@@ -8,7 +8,7 @@ window.onload = () => {
         window.addEventListener('devicemotion', event => {
             const acceleration = event.acceleration.x
             console.log(acceleration)
-            updateDisplay('Aceleração no eixo X: ' + acceleration)
+            updateDisplay('Aceleração no eixo X: ' + acceleration.toFixed(3))
         })
 
     } else console.log('Seu navegador não suporta a API de orientação do dispositivo.')    
